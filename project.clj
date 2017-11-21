@@ -3,7 +3,7 @@
   :url "https://github.com/roomkey/aegis"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :plugins [[com.roomkey/lein-v "6.1.0"]]
+  :plugins [[com.roomkey/lein-v "6.2.0"]]
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.apache.tinkerpop/tinkergraph-gremlin "3.3.0"]
                  [potemkin "0.4.4"]]
