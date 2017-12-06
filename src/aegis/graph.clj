@@ -1,4 +1,4 @@
-(ns aegis.graph.core
+(ns aegis.graph
   (:import org.apache.tinkerpop.gremlin.structure.Graph))
 
 (defn close!

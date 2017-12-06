@@ -1,8 +1,9 @@
 (ns aegis.unit.edge
   (:require [aegis
-              [vertex :as vertex]
-              [edge :as edge]]
-             [aegis.unit.graph.core
+             [edge :as edge]
+             [graph :as graph]
+             [vertex :as vertex]]
+             [aegis.unit.graph
               :refer [with-test-graph
                       *graph*]]
              [midje.sweet :refer :all]))

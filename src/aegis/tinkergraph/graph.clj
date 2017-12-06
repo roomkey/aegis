@@ -1,4 +1,4 @@
-(ns aegis.graph.tinkergraph
+(ns aegis.tinkergraph.graph
   (:import org.apache.tinkerpop.gremlin.tinkergraph.structure.TinkerGraph))
 
 (defn open!

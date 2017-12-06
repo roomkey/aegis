@@ -1,10 +1,9 @@
-(ns aegis.unit.graph.core
-  (:require [aegis.graph
-             [core :as graph]
-             [tinkergraph :as tinkergraph]]
-            [aegis
+(ns aegis.unit.graph
+  (:require [aegis
              [edge :as edge]
+             [graph :as graph]
              [vertex :as vertex]]
+            [aegis.tinkergraph.graph :as tinkergraph]
             [midje.sweet :refer :all]))
 
 (def ^{:dynamic true} *graph*)

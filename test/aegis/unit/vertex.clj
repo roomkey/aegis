@@ -2,7 +2,7 @@
   (:require [aegis
              [vertex :as vertex]
              [edge :as edge]]
-            [aegis.unit.graph.core
+            [aegis.unit.graph
              :refer [with-test-graph
                      *graph*]]
             [midje.sweet :refer :all]))
