@@ -12,7 +12,6 @@
                                   [org.apache.tinkerpop/tinkergraph-gremlin ~gremlin-version]]}}
   :release-tasks [["vcs" "assert-committed"]
                   ["vcs" "push"]
-                  ["vcs" "tag"]
                   ["deploy" "rk-maven"]]
   :repositories {"rk-public" {:url "http://rk-maven-public.s3-website-us-east-1.amazonaws.com/releases/"}
                  "releases" {:url "s3p://rk-maven/releases/" :no-auth true}})
