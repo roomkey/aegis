@@ -10,5 +10,11 @@
                  [potemkin "0.4.5"]]
   :profiles {:dev {:dependencies [[midje "1.9.1" :exclusions [org.clojure/clojure]]
                                   [org.apache.tinkerpop/tinkergraph-gremlin ~gremlin-version]]}}
+  :release-tasks [["vcs" "assert-committed"]
+                  ["change" "version"
+                   "leiningen.release/bump-version" "release"]
+                  ["vcs" "commit"]
+                  ["vcs" "tag"]
+                  ["deploy"]]
   :repositories {"rk-public" {:url "http://rk-maven-public.s3-website-us-east-1.amazonaws.com/releases/"}
                  "releases" {:url "s3://rk-maven/releases/" :creds :gpg}})
