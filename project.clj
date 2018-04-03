@@ -1,6 +1,6 @@
 (def gremlin-version "3.3.0")
 
-(defproject com.roomkey/aegis (str gremlin-version ".0")
+(defproject com.roomkey/aegis "3.3.0.0"
   :description "A Clojure library for managing the structure of Apache Tinkerpop graphs"
   :url "https://github.com/roomkey/aegis"
   :license {:name "Eclipse Public License"
