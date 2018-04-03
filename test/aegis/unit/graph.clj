@@ -3,16 +3,16 @@
              [edge :as edge]
              [graph :as graph]
              [vertex :as vertex]]
-            [aegis.tinkergraph.graph :as tinkergraph]
-            [midje.sweet :refer :all]))
+            [midje.sweet :refer :all])
+  (:import org.apache.tinkerpop.gremlin.tinkergraph.structure.TinkerGraph))
 
-(def ^{:dynamic true} *graph*)
+(def ^:dynamic *graph*)
 
 (defmacro with-test-graph
   "Creates an empty TinkerGraph and binds it to the *graph* var.
   Closes the graph after the body is executed."
   [& body]
-  `(let [graph# (tinkergraph/open!)]
+  `(let [graph# (TinkerGraph/open)]
      (binding [*graph* graph#]
        (try
          ~@body
