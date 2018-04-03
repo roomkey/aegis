@@ -1,4 +1,4 @@
-(defproject com.roomkey/aegis "3.3.1.0-SNAPSHOT"
+(defproject com.roomkey/aegis "3.3.1.0"
   :description "A Clojure library for managing the structure of Apache Tinkerpop graphs"
   :url "https://github.com/roomkey/aegis"
   :license {:name "Eclipse Public License"
